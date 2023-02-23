@@ -29,7 +29,7 @@
         {
       "type": "Microsoft.Network/virtualNetworks",
       "apiVersion": "2020-06-01",
-      "name": "[concat(parameters('customerid'), '-vnet-pl-ide-prd-westeu-001')]",
+      "name": "[concat(parameters('customerid'), '-vnet-pl-man-prd-westeu-001')]",
       "location": "[parameters('rgLocation')]",
       "properties": {
         "addressSpace": {
@@ -39,7 +39,7 @@
         },
         "subnets": [
           {
-            "name": "[concat(parameters('customerid'), '-snet-pl-ide-prd-001')]",
+            "name": "[concat(parameters('customerid'), '-snet-pl-man-prd-001')]",
             "properties": {
               "addressPrefix": "[concat(parameters('addressprefix'), '.147.0/25')]"
             }
