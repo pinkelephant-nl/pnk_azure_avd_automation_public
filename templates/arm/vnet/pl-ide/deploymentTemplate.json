@@ -29,31 +29,19 @@
         {
       "type": "Microsoft.Network/virtualNetworks",
       "apiVersion": "2020-06-01",
-      "name": "[concat(parameters('customerid'), '-vnet-lz-', parameters('customerid'), '-prd-westeu-001')]",
+      "name": "[concat(parameters('customerid'), '-vnet-pl-ide-prd-westeu-001')]",
       "location": "[parameters('rgLocation')]",
       "properties": {
         "addressSpace": {
           "addressPrefixes": [
-            "[concat(parameters('addressprefix'), '.4.0/22')]"
+            "[concat(parameters('addressprefix'), '.2.0/24')]"
           ]
         },
         "subnets": [
           {
-            "name": "[concat(parameters('customerid'), '-snet-inf-prd-001')]",
+            "name": "[concat(parameters('customerid'), '-snet-pl-ide-prd-001')]",
             "properties": {
-              "addressPrefix": "[concat(parameters('addressprefix'), '.4.0/25')]"
-            }
-          },
-          {
-            "name": "[concat(parameters('customerid'), '-snet-avd-prd-001')]",
-            "properties": {
-              "addressPrefix": "[concat(parameters('addressprefix'), '.5.0/25')]"
-            }
-          },
-          {
-            "name": "[concat(parameters('customerid'), '-snet-app-prd-001')]",
-            "properties": {
-              "addressPrefix": "[concat(parameters('addressprefix'), '.6.0/25')]"
+              "addressPrefix": "[concat(parameters('addressprefix'), '.2.0/25')]"
             }
           }
         ]
