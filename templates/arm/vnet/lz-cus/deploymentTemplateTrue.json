@@ -34,7 +34,7 @@
       "properties": {
         "addressSpace": {
           "addressPrefixes": [
-            "[concat(parameters('addressprefix'), '.148.0/22')]"
+            "[concat(parameters('addressprefix'), '.148.0/21')]"
           ]
         },
         "subnets": [
