@@ -13,6 +13,9 @@
       },
       "customerfullname": {
          "type": "string"
+      },
+      "sharedkey": {
+         "type": "secureString"
       }
     },
     "variables": {
@@ -36,7 +39,7 @@
                 "connectionType": "IPsec",
                 "connectionProtocol": "IKEv2",
                 "routingWeight": 10,
-                "sharedKey": "Prmc4yKvadQOoItFBLUD",
+                "sharedKey": "[parameters('sharedkey')]",
                 "enableBgp": false,
                 "useLocalAzureIpAddress": false,
                 "usePolicyBasedTrafficSelectors": true,
