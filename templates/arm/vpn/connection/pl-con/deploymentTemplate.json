@@ -13,13 +13,11 @@
       },
       "customerfullname": {
          "type": "string"
-      },
-       "resourcegroup": {
-        "type": "string",
-        "defaultValue": "[concat(parameters('customerid'), '-pl-connectivity-net-prd-001')]"
       }
     },
-    "variables": {},
+    "variables": {
+    "resourcegroup": "[concat(parameters('customerid'), '-pl-connectivity-net-prd-001')]"
+     },
     "resources": [
         {
             "type": "Microsoft.Network/connections",
@@ -28,11 +26,11 @@
             "location": "westeurope",
             "properties": {
                 "virtualNetworkGateway1": {
-                    "id": "[concat('/subscriptions/', parameters('subscriptionidcon'), '/resourceGroups/', parameters('resourcegroup'), /providers/Microsoft.Network/virtualNetworkGateways/', parameters('customerid'), '-vgw-', parameters('customerfullname'), 'prd-westeu-001')]",
+                    "id": "[concat('/subscriptions/', parameters('subscriptionidcon'), '/resourceGroups/', variables('resourcegroup'), /providers/Microsoft.Network/virtualNetworkGateways/', parameters('customerid'), '-vgw-', parameters('customerfullname'), 'prd-westeu-001')]",
                     "properties": {}
                 },
                 "localNetworkGateway2": {
-                    "id": "[concat('/subscriptions/', parameters('subscriptionidcon'), '/resourceGroups/', parameters('resourcegroup'), /providers/Microsoft.Network/localNetworkGateways/', parameters('customerid'), '-lng-pl-con-azure_', parameters('site'), 'primary-prd-001')]",
+                    "id": "[concat('/subscriptions/', parameters('subscriptionidcon'), '/resourceGroups/', variables('resourcegroup'), /providers/Microsoft.Network/localNetworkGateways/', parameters('customerid'), '-lng-pl-con-azure_', parameters('site'), 'primary-prd-001')]",
                     "properties": {}
                 },
                 "connectionType": "IPsec",
