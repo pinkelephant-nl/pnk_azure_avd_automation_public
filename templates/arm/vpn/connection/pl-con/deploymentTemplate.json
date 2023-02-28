@@ -2,18 +2,18 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "customerid": {
-           "type": "string"
-        },           
-        "subscriptionidcon": {
-           "type": "string"
-        },
-        "site": {
-           "type": "string"
-        },
-        "customerfullname"{
-           "type": "string"
-        }
+      "customerid": {
+         "type": "string"
+      },           
+      "subscriptionidcon": {
+         "type": "string"
+      },
+      "site": {
+         "type": "string"
+      },
+      "customerfullname": {
+         "type": "string"
+      }
     },
     "variables": {},
     "resources": [
