@@ -16,7 +16,7 @@
       },
        "resourcegroup": {
         "type": "string",
-        "value": "[concat(parameters('customerid'), '-pl-connectivity-net-prd-001')]"
+        "defaultValue": "[concat(parameters('customerid'), '-pl-connectivity-net-prd-001')]"
       }
     },
     "variables": {},
