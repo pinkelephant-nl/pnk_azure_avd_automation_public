@@ -24,7 +24,7 @@
             "location": "westeurope",
             "properties": {
                 "virtualNetworkGateway1": {
-                    "id": "[concat('/subscriptions/', parameters('subscriptionidcon'), '/resourceGroups/', parameters('customerid'), '-pl-connectivity-net-prd-001/providers/Microsoft.Network/virtualNetworkGateways/', parameters('customerid'), '-vgw-', parameters('customerfullname'), 'prd-westeu-001' )]",
+                    "id": "[concat('/subscriptions/', parameters('subscriptionidcon'), '/resourceGroups/', parameters('customerid'), '-pl-connectivity-net-prd-001/providers/Microsoft.Network/virtualNetworkGateways/', parameters('customerid'), '-vgw-', parameters('customerfullname'), 'prd-westeu-001')]",
                     "properties": {}
                 },
                 "localNetworkGateway2": {
