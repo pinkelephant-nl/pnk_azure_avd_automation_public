@@ -62,11 +62,8 @@
       }
   },
   "variables": {
-    "roleDefName": "[guid(subscription().id, string(parameters('actions')), string(parameters('notActions')))]",
-    "assignableScopes": [
-          "/subscriptions/{parameters('SubscriptionIdCON')}",
-          "/subscriptions/{parameters('SubscriptionIdLZ')}"
-       ]
+    "roleDefName": "[guid(subscription().id, string(parameters('actions')), string(parameters('notActions')))]"
+  }
   },
   "resources": [
     {
@@ -84,7 +81,8 @@
           }
         ],
         "assignableScopes": [
-          "variables('assignableScopes')"
+          "/subscriptions/{parameters('SubscriptionIdCON')}",
+          "/subscriptions/{parameters('SubscriptionIdLZ')}"
         ]
       }
     }
