@@ -42,14 +42,14 @@
     },
     "roleName": {
       "type": "string",
-      "defaultValue": "Custom Role - RG Reader",
+      "defaultValue": "Azure Bastion1 login for 3rd party remote support",
       "metadata": {
-        "description": "Friendly name of the role definition"
+        "description": "Azure Bastion Login for externals"
       }
     },
     "roleDescription": {
       "type": "string",
-      "defaultValue": "Subscription Level Deployment of a Role Definition",
+      "defaultValue": "",
       "metadata": {
         "description": "Detailed description of the role definition"
       }
