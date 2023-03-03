@@ -12,7 +12,22 @@
     "actions": {
       "type": "array",
       "defaultValue": [
-        "Microsoft.Resources/subscriptions/resourceGroups/read"
+        "Microsoft.Network/bastionHosts/read",
+        "Microsoft.Network/publicIPAddresses/read",
+        "Microsoft.Network/virtualNetworks/read",
+        "Microsoft.Network/loadBalancers/read",
+        "Microsoft.Network/networkInterfaces/read",
+        "Microsoft.Compute/virtualMachines/*/read",
+        "Microsoft.HybridCompute/machines/*/read",
+        "Microsoft.HybridConnectivity/endpoints/listCredentials/action"
+      ],
+      "dataActions": {
+      "type": "array",
+      "defaultValue": [
+        "Microsoft.Compute/virtualMachines/login/action",
+        "Microsoft.Compute/virtualMachines/loginAsAdmin/action",
+        "Microsoft.HybridCompute/machines/login/action",
+        "Microsoft.HybridCompute/machines/loginAsAdmin/action"
       ],
       "metadata": {
         "description": "Array of actions for the roleDefinition"
@@ -38,10 +53,20 @@
       "metadata": {
         "description": "Detailed description of the role definition"
       }
-    }
+    },
+    "SubscriptionIdCON": {
+      "type": "string",
+      },
+    "SubscriptionIdLZ": {
+      "type": "string",
+      }
   },
   "variables": {
-    "roleDefName": "[guid(subscription().id, string(parameters('actions')), string(parameters('notActions')))]"
+    "roleDefName": "[guid(subscription().id, string(parameters('actions')), string(parameters('notActions')))]",
+    "assignableScopes": "[
+          concat('/subscriptions/', parameters('SubscriptionIdCON')),
+          concat('/subscriptions/', parameters('SubscriptionIdLZ'))
+        ]"
   },
   "resources": [
     {
@@ -59,7 +84,7 @@
           }
         ],
         "assignableScopes": [
-          "[subscription().id]"
+          "variables('assignableScopes')"
         ]
       }
     }
