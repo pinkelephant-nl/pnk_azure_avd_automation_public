@@ -54,11 +54,13 @@
         "description": "Detailed description of the role definition"
       }
     },
-    "SubscriptionIdCON": {
+   "SubscriptionIdCON": {
       "type": "string",
+      "defaultValue": "",
       },
-    "SubscriptionIdLZ": {
+   "SubscriptionIdLZ": {
       "type": "string",
+      "defaultValue": "",
       }
   },
   "variables": {
