@@ -64,8 +64,8 @@
   "variables": {
     "roleDefName": "[guid(subscription().id, string(parameters('actions')), string(parameters('notActions')))]",
     "assignableScopes": [
-          "/subscriptions/', parameters('SubscriptionIdCON')",
-          "/subscriptions/', parameters('SubscriptionIdLZ')"
+          "/subscriptions/{parameters('SubscriptionIdCON')}",
+          "/subscriptions/{parameters('SubscriptionIdLZ')}"
        ]
   },
   "resources": [
