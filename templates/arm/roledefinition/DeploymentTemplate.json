@@ -74,7 +74,9 @@
             "notActions": "[parameters('notActions')]"
           }
         ],
-        "assignableScopes": [subscription().id]
+        "assignableScopes": [
+          [subscription().id]
+          ]
         
       }
     }
