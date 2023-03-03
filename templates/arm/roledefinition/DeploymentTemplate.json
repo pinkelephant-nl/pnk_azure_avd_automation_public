@@ -81,8 +81,8 @@
           }
         ],
         "assignableScopes": [
-          "/subscriptions/parameters('SubscriptionIdCON')",
-          "/subscriptions/parameters('SubscriptionIdLZ')"
+          "concat('/subscriptions/', parameters('SubscriptionIdCON))",
+          "concat('/subscriptions/', parameters('SubscriptionIdLZ))"
         ]
       }
     }
