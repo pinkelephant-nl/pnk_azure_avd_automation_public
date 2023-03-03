@@ -53,15 +53,7 @@
       "metadata": {
         "description": "Detailed description of the role definition"
       }
-    },
-   "SubscriptionIdCON": {
-      "type": "string",
-      "defaultValue": "",
-      },
-   "SubscriptionIdLZ": {
-      "type": "string",
-      "defaultValue": "",
-      }
+    }
   },
   "variables": {
     "roleDefName": "[guid(subscription().id, string(parameters('actions')), string(parameters('notActions')))]"
