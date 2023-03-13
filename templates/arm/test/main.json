@@ -11,7 +11,7 @@
       "properties": {
         "mode": "Incremental",
         "template": {
-          <nested-template-syntax>
+          "https://raw.githubusercontent.com/pinkelephant-nl/pnk_azure_avd_automation_public/main/templates/arm/test/nested.json"
         }
       }
     }
