@@ -10,8 +10,8 @@
       "name": "nestedTemplate1",
       "properties": {
         "mode": "Incremental",
-        "template": {
-          "https://raw.githubusercontent.com/pinkelephant-nl/pnk_azure_avd_automation_public/main/templates/arm/test/nested.json"
+        "templatelink": {
+          "uri":"https://raw.githubusercontent.com/pinkelephant-nl/pnk_azure_avd_automation_public/main/templates/arm/test/nested.json"
         }
       }
     }
