@@ -12,7 +12,7 @@
       {
         "type": "Microsoft.Resources/deployments",
         "apiVersion": "2021-04-01",
-        "name": "nestedTemplate1",
+        "name": "nestedTemplate",
         "properties": {
           "mode": "Incremental",
           "templateLink": {
