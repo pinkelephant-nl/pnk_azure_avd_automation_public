@@ -1,7 +1,9 @@
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
-  "parameters": {},
+  "parameters": {
+  
+  },
   "variables": {},
   "resources": [
     {
@@ -11,7 +13,8 @@
       "properties": {
         "mode": "Incremental",
         "templatelink": {
-          "uri":"https://raw.githubusercontent.com/pinkelephant-nl/pnk_azure_avd_automation_public/main/templates/arm/test/nested.json"
+          "uri":"https://raw.githubusercontent.com/pinkelephant-nl/pnk_azure_avd_automation_public/main/templates/arm/test/nested.json",
+          "contentVersion":"1.0.0.0"
         }
       }
     }
