@@ -6,7 +6,7 @@
       "type": "string",
       "defaultValue": "armtest"
     },
-    "storageAccountName": {
+    "storageAccountName1": {
         "type": "string",
         "defaultValue": "armtest1"
       }
