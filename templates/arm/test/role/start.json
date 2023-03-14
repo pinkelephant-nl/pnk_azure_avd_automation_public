@@ -8,6 +8,7 @@
         "type": "Microsoft.Resources/deployments",
         "apiVersion": "2021-04-01",
         "name": "main",
+        "location": "westeurope",
         "properties": {
           "mode": "Incremental",
           "templateLink": {
