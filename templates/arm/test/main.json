@@ -13,14 +13,14 @@
         "templatelink": {
           "uri":"https://raw.githubusercontent.com/pinkelephant-nl/pnk_azure_avd_automation_public/main/templates/arm/test/nested.json",
           "contentVersion":"1.0.0.0"
-        }
-      }
     },
     "parameters": {
         "storageAccountName": {
           "value": "[parameters('storageAccountName')]"
         }
       }
+    }
+   }
   ],
   "outputs": {
   }
