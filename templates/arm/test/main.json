@@ -4,24 +4,21 @@
   "parameters": {},
   "variables": {},
   "resources": [
-    {
-      "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2021-04-01",
-      "name": "nestedTemplate1",
-      "properties": {
-        "mode": "Incremental",
-        "templatelink": {
-          "uri":"https://raw.githubusercontent.com/pinkelephant-nl/pnk_azure_avd_automation_public/main/templates/arm/test/nested.json",
-          "contentVersion":"1.0.0.0"
-    },
-    "parameters": {
+  {
+    "type": "Microsoft.Resources/deployments",
+    "apiVersion": "2021-04-01",
+    "name": "linkedTemplate",
+    "properties": {
+      "mode": "Incremental",
+      "templateLink": {
+        "uri": "https://mystorageaccount.blob.core.windows.net/AzureTemplates/newStorageAccount.json",
+        "contentVersion": "1.0.0.0"
+      },
+      "parameters": {
         "storageAccountName": {
           "value": "[parameters('storageAccountName')]"
         }
       }
     }
-   }
-  ],
-  "outputs": {
   }
-}
+]
