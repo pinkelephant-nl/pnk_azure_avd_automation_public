@@ -14,7 +14,6 @@
           "uri": "https://raw.githubusercontent.com/pinkelephant-nl/pnk_azure_avd_automation_public/main/templates/arm/test/role/bastion.json",
           "contentVersion": "1.0.0.0"
         }
-        }
       }
     ],
     "outputs": {
