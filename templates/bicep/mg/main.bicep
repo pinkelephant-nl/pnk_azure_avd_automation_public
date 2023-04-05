@@ -3,18 +3,18 @@ targetScope = 'tenant'
 @sys.description('Prefix for the management group hierarchy. This management group will be created as part of the deployment. Default: alz')
 @minLength(2)
 @maxLength(10)
-param parCustomerID string = 'tst'
+param CustomerID string = 'tst'
 
 @sys.description('Display name for top level management group. This name will be applied to the management group prefix defined in parTopLevelManagementGroupPrefix parameter. Default: Azure Landing Zones')
 @minLength(2)
-param parCustomerFullName string = 'test'
+param CustomerFullName string = 'test'
 
 
 @description('Tier 1 management groups. Must contain id and displayName properties.')
 param tier1MgmtGroups array = [
 {
-          id: parCustomerFullName
-          displayName: parCustomerFullName
+          id: CustomerFullName
+          displayName: CustomerFullName
           
         }
 
@@ -23,24 +23,24 @@ param tier1MgmtGroups array = [
 @description('Optional. Tier 2 management groups. Must contain id, displayName and ParentId properties.')
 param tier2MgmtGroups array = [
 {
-          id: '${parCustomerID}-platform'
-          displayName: '${parCustomerID}-platform'
-          parentId: parCustomerFullName
+          id: '${CustomerID}-platform'
+          displayName: '${CustomerID}-platform'
+          parentId: CustomerFullName
         }
         {
-          id: '${parCustomerID}-landingzones'
-          displayName: '${parCustomerID}-landingzones'
-          parentId: parCustomerFullName
+          id: '${CustomerID}-landingzones'
+          displayName: '${CustomerID}-landingzones'
+          parentId: CustomerFullName
         }
         {
-          id: '${parCustomerID}-sandbox'
-          displayName: '${parCustomerID}-sandbox'
-          parentId: parCustomerFullName
+          id: '${CustomerID}-sandbox'
+          displayName: '${CustomerID}-sandbox'
+          parentId: CustomerFullName
         }
         {
-          id: '${parCustomerID}-decommissioned'
-          displayName: '${parCustomerID}-decommissioned'
-          parentId: parCustomerFullName
+          id: '${CustomerID}-decommissioned'
+          displayName: '${CustomerID}-decommissioned'
+          parentId: CustomerFullName
         }
       
 ]
@@ -48,53 +48,53 @@ param tier2MgmtGroups array = [
 @description('Optional. Tier 3 management groups. Must contain id, displayName and ParentId properties.')
 param tier3MgmtGroups array = [
 {
-          id: '${parCustomerID}-platform-connectivity'
-          displayName: '${parCustomerID}-platform-connectivity'
-          parentId: '${parCustomerID}-platform'
+          id: '${CustomerID}-platform-connectivity'
+          displayName: '${CustomerID}-platform-connectivity'
+          parentId: '${CustomerID}-platform'
         }
         {
-          id: '${parCustomerID}-platform-identity'
-          displayName: '${parCustomerID}-platform-identity'
-          parentId: '${parCustomerID}-platform'
+          id: '${CustomerID}-platform-identity'
+          displayName: '${CustomerID}-platform-identity'
+          parentId: '${CustomerID}-platform'
         }
         {
-          id: '${parCustomerID}-platform-management'
-          displayName: '${parCustomerID}-platform-management'
-          parentId: '${parCustomerID}-platform'
+          id: '${CustomerID}-platform-management'
+          displayName: '${CustomerID}-platform-management'
+          parentId: '${CustomerID}-platform'
         }
         {
-          id: '${parCustomerID}-landingzones-${parCustomerID}'
-          displayName: '${parCustomerID}-landingzones-${parCustomerID}'
-          parentId: '${parCustomerID}-landingzones'
+          id: '${CustomerID}-landingzones-${CustomerID}'
+          displayName: '${CustomerID}-landingzones-${CustomerID}'
+          parentId: '${CustomerID}-landingzones'
         }
         {
-          id: '${parCustomerID}-landingzones-xxx'
-          displayName: '${parCustomerID}-landingzones-xxx'
-          parentId: '${parCustomerID}-landingzones'
+          id: '${CustomerID}-landingzones-xxx'
+          displayName: '${CustomerID}-landingzones-xxx'
+          parentId: '${CustomerID}-landingzones'
         }
 ]
 
 @description('Optional. Tier 4 management groups. Must contain id, displayName and ParentId properties.')
 param tier4MgmtGroups array = [
 {
-          id: '${parCustomerID}-landingzones-${parCustomerID}-prod'
-          displayName: '${parCustomerID}-landingzones-${parCustomerID}-prod'
-          parentId: '${parCustomerID}-landingzones-${parCustomerID}'
+          id: '${CustomerID}-landingzones-${CustomerID}-prod'
+          displayName: '${CustomerID}-landingzones-${CustomerID}-prod'
+          parentId: '${CustomerID}-landingzones-${CustomerID}'
         }
         {
-          id: '${parCustomerID}-landingzones-${parCustomerID}-nonprod'
-          displayName: '${parCustomerID}-landingzones-${parCustomerID}-nonprod'
-          parentId: '${parCustomerID}-landingzones-${parCustomerID}'
+          id: '${CustomerID}-landingzones-${CustomerID}-nonprod'
+          displayName: '${CustomerID}-landingzones-${CustomerID}-nonprod'
+          parentId: '${CustomerID}-landingzones-${CustomerID}'
         }
         {
-          id: '${parCustomerID}-landingzones-xxx-prod'
-          displayName: '${parCustomerID}-landingzones-xxx-prod'
-          parentId: '${parCustomerID}-landingzones-xxx'
+          id: '${CustomerID}-landingzones-xxx-prod'
+          displayName: '${CustomerID}-landingzones-xxx-prod'
+          parentId: '${CustomerID}-landingzones-xxx'
         }
         {
-          id: '${parCustomerID}-landingzones-xxx-nonprod'
-          displayName: '${parCustomerID}-landingzones-xxx-nonprod'
-          parentId: '${parCustomerID}-landingzones-xxx'
+          id: '${CustomerID}-landingzones-xxx-nonprod'
+          displayName: '${CustomerID}-landingzones-xxx-nonprod'
+          parentId: '${CustomerID}-landingzones-xxx'
         }
         
 ]
@@ -106,7 +106,7 @@ param tier5MgmtGroups array = []
 param tier6MgmtGroups array = []
 
 @description('Optional. Default Management group for new subscriptions.')
-param defaultMgId string = '${parCustomerID}-decommissioned'
+param defaultMgId string = '${CustomerID}-decommissioned'
 
 @description('Optional. Indicates whether RBAC access is required upon group creation under the root Management Group. Default value is true')
 param authForNewMG bool = true
