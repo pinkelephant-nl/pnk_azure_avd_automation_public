@@ -15,21 +15,28 @@
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
-            "name": "[concat(parameters('customerid'), '-pl-identity', '-core', '-prd-001')]",
+            "name": "[concat(parameters('customerid'), '-pl-identity', '-bck', '-prd-01')]",
             "properties": {}
         },
         {
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
-            "name": "[concat(parameters('customerid'), '-pl-identity', '-net', '-prd-001')]",
+            "name": "[concat(parameters('customerid'), '-pl-identity', '-inf', '-prd-01')]",
             "properties": {}
         },
         {
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
-            "name": "[concat(parameters('customerid'), '-pl-identity', '-vms', '-prd-001')]",
+            "name": "[concat(parameters('customerid'), '-pl-identity', '-net', '-prd-01')]",
+            "properties": {}
+        },
+        {
+            "type": "Microsoft.Resources/resourceGroups",
+            "apiVersion": "2018-05-01",
+            "location": "[parameters('rgLocation')]",
+            "name": "[concat(parameters('customerid'), '-pl-identity', '-vms', '-prd-01')]",
             "properties": {}
         }
     ],
