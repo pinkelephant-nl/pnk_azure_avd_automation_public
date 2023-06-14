@@ -15,49 +15,84 @@
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
-            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-inf', '-prd-01')]",
+            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-bck', '-prd-001')]",
             "properties": {}
         },
         {
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
-            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-net', '-prd-01')]",
+            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-end', '-prd-001')]",
             "properties": {}
         },
         {
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
-            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-vms', '-prd-01')]",
+            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-inf', '-prd-001')]",
             "properties": {}
         },
         {
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
-            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-avd', '-prd-01')]",
+            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-net', '-prd-001')]",
             "properties": {}
         },
         {
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
-            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-avd', '-dev-01')]",
+            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-vms', '-prd-001')]",
             "properties": {}
         },
         {
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
-            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-aib', '-prd-01')]",
+            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-avd', '-prd-001')]",
             "properties": {}
         },
         {
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
-            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-aib', '-dev-01')]",
+            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-avd', '-dev-001')]",
+            "properties": {}
+        },
+        {
+            "type": "Microsoft.Resources/resourceGroups",
+            "apiVersion": "2018-05-01",
+            "location": "[parameters('rgLocation')]",
+            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-aib', '-prd-001')]",
+            "properties": {}
+        },
+        {
+            "type": "Microsoft.Resources/resourceGroups",
+            "apiVersion": "2018-05-01",
+            "location": "[parameters('rgLocation')]",
+            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-aib', '-dev-001')]",
+            "properties": {}
+        },
+        {
+            "type": "Microsoft.Resources/resourceGroups",
+            "apiVersion": "2018-05-01",
+            "location": "[parameters('rgLocation')]",
+            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-northwave', '-prd-001')]",
+            "properties": {}
+        },
+        {
+            "type": "Microsoft.Resources/resourceGroups",
+            "apiVersion": "2018-05-01",
+            "location": "[parameters('rgLocation')]",
+            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-ics', '-prd-001')]",
+            "properties": {}
+        },
+        {
+            "type": "Microsoft.Resources/resourceGroups",
+            "apiVersion": "2018-05-01",
+            "location": "[parameters('rgLocation')]",
+            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-ics', '-nonprd-001')]",
             "properties": {}
         }
 
