@@ -22,7 +22,7 @@
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
-            "name": "[concat(parameters('customerid'), '-pl-connectivity', '-core', '-prd-01')]",
+            "name": "[concat(parameters('customerid'), '-pl-connectivity', '-inf', '-prd-01')]",
             "properties": {}
         }
     ],
