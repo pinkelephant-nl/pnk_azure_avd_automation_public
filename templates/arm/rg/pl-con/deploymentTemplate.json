@@ -33,9 +33,7 @@
                 "department": "it",
 	            "resourcegroup": "[concat(parameters('customerid'), '-pl-connectivity', '-inf', '-prd-001')]",
 	            "supportedby": "pink",
-		        "subscription": "pl-connectivity"
-	
-                    },
+		        "subscription": "pl-connectivity"},
             "name": "[concat(parameters('customerid'), '-pl-connectivity', '-inf', '-prd-001')]",
             "properties": {}
         }
