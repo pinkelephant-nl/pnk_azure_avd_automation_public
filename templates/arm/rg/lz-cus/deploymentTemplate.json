@@ -130,7 +130,7 @@
             "tags": {
                 "environment": "prod",
                 "department": "it",
-	            "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-aibk', '-dev-001')]",
+	            "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-aib', '-dev-001')]",
 	            "supportedby": "pink"
 	
                     },
