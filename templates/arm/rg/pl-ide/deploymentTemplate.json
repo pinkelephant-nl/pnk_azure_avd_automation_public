@@ -15,12 +15,6 @@
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
-            "tags": {
-                "environment": "prod",
-                "department": "it",
-	        "resourcegroup": "[concat(parameters('customerid'), '-pl-identity', '-bck', '-prd-001')]",
-	        "supportedby": "pink",
-		"subscription": "pl-identity"},
             "name": "[concat(parameters('customerid'), '-pl-identity', '-bck', '-prd-001')]",
             "properties": {}
         },
@@ -28,12 +22,6 @@
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
-            "tags": {
-            	"environment": "prod",
-                "department": "it",
-	        "resourcegroup": "[concat(parameters('customerid'), '-pl-identity', '-inf', '-prd-001')]",
-	        "supportedby": "pink",
-		"subscription": "pl-identity"},
             "name": "[concat(parameters('customerid'), '-pl-identity', '-inf', '-prd-001')]",
             "properties": {}
         },
@@ -41,12 +29,6 @@
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
-            "tags": {
-                "environment": "prod",
-                "department": "it",
-	        "resourcegroup": "[concat(parameters('customerid'), '-pl-identity', '-net', '-prd-001')]",
-	        "supportedby": "pink",
-		"subscription": "pl-identity"},
             "name": "[concat(parameters('customerid'), '-pl-identity', '-net', '-prd-001')]",
             "properties": {}
         },
@@ -54,12 +36,6 @@
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
-            "tags": {
-                "environment": "prod",
-                "department": "it",
-	        "resourcegroup": "[concat(parameters('customerid'), '-pl-identity', '-vms', '-prd-001')]",
-	        "supportedby": "pink",
-		"subscription": "pl-identity"},
             "name": "[concat(parameters('customerid'), '-pl-identity', '-vms', '-prd-001')]",
             "properties": {}
         }
