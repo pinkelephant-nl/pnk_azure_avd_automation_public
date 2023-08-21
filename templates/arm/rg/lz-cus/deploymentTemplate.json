@@ -100,7 +100,7 @@
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
             "tags": {
-                "environment": "prod",
+                "environment": "dev",
                 "department": "it",
 	            "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-avd', '-dev-001')]",
 	            "supportedby": "pink"
@@ -128,7 +128,7 @@
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
             "tags": {
-                "environment": "prod",
+                "environment": "dev",
                 "department": "it",
 	            "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-aib', '-dev-001')]",
 	            "supportedby": "pink"
