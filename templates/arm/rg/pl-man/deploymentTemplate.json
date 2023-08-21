@@ -15,6 +15,14 @@
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
+            "tags": {
+                "environment": "prod",
+                "department": "it",
+	            "resourcegroup": "[concat(parameters('customerid'), '-pl-management', '-inf', '-prd-001')]",
+	            "supportedby": "pink",
+		        "subscription": "pl-management"
+	
+                    },
             "name": "[concat(parameters('customerid'), '-pl-management', '-inf', '-prd-001')]",
             "properties": {}
         },
@@ -22,6 +30,14 @@
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
+            "tags": {
+                "environment": "prod",
+                "department": "it",
+	            "resourcegroup": "[concat(parameters('customerid'), '-pl-management', '-net', '-prd-001')]",
+	            "supportedby": "pink",
+		        "subscription": "pl-management"
+	
+                    },
             "name": "[concat(parameters('customerid'), '-pl-management', '-net', '-prd-001')]",
             "properties": {}
         },
@@ -29,6 +45,14 @@
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
+            "tags": {
+                "environment": "prod",
+                "department": "it",
+	            "resourcegroup": "[concat(parameters('customerid'), '-pl-management', '-bck', '-prd-001')]",
+	            "supportedby": "pink",
+		        "subscription": "pl-management"
+	
+                    },
             "name": "[concat(parameters('customerid'), '-pl-management', '-bck', '-prd-001')]",
             "properties": {}
         },
@@ -36,6 +60,14 @@
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
+            "tags": {
+                "environment": "prod",
+                "department": "it",
+	            "resourcegroup": "[concat(parameters('customerid'), '-pl-management', '-siem', '-prd-001')]",
+	            "supportedby": "pink",
+		        "subscription": "pl-management"
+	
+                    },
             "name": "[concat(parameters('customerid'), '-pl-management', '-siem', '-prd-001')]",
             "properties": {}
         },
@@ -43,6 +75,14 @@
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
+            "tags": {
+                "environment": "prod",
+                "department": "it",
+	            "resourcegroup": "[concat(parameters('customerid'), '-pl-management', '-vms', '-prd-001')]",
+	            "supportedby": "pink",
+		        "subscription": "pl-management"
+	
+                    },
             "name": "[concat(parameters('customerid'), '-pl-management', '-vms', '-prd-001')]",
             "properties": {}
         }
