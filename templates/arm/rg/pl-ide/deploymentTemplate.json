@@ -30,7 +30,7 @@
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
-            tags": {
+            "tags": {
                 "environment": "prod",
                 "department": "it",
 	            "resourcegroup": "[concat(parameters('customerid'), '-pl-identity', '-inf', '-prd-001')]",
@@ -45,7 +45,7 @@
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
-            tags": {
+            "tags": {
                 "environment": "prod",
                 "department": "it",
 	            "resourcegroup": "[concat(parameters('customerid'), '-pl-identity', '-net', '-prd-001')]",
@@ -60,7 +60,7 @@
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
-            tags": {
+            "tags": {
                 "environment": "prod",
                 "department": "it",
 	            "resourcegroup": "[concat(parameters('customerid'), '-pl-identity', '-vms', '-prd-001')]",
