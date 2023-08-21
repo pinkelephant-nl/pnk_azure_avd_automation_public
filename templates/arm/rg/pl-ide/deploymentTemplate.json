@@ -33,9 +33,9 @@
             "tags": {
                 "environment": "prod",
                 "department": "it",
-	            "resourcegroup": "[concat(parameters('customerid'), '-pl-identity', '-inf', '-prd-001')]",
-	            "supportedby": "pink",
-		        "subscription": "pl-indentity"
+	        "resourcegroup": "[concat(parameters('customerid'), '-pl-identity', '-inf', '-prd-001')]",
+	        "supportedby": "pink",
+		"subscription": "pl-indentity"
 	
                     },
             "name": "[concat(parameters('customerid'), '-pl-identity', '-inf', '-prd-001')]",
@@ -48,9 +48,9 @@
             "tags": {
                 "environment": "prod",
                 "department": "it",
-	            "resourcegroup": "[concat(parameters('customerid'), '-pl-identity', '-net', '-prd-001')]",
-	            "supportedby": "pink",
-		        "subscription": "pl-indentity"
+	        "resourcegroup": "[concat(parameters('customerid'), '-pl-identity', '-net', '-prd-001')]",
+		"supportedby": "pink",
+		"subscription": "pl-indentity"
 	
                     },
             "name": "[concat(parameters('customerid'), '-pl-identity', '-net', '-prd-001')]",
@@ -63,9 +63,9 @@
             "tags": {
                 "environment": "prod",
                 "department": "it",
-	            "resourcegroup": "[concat(parameters('customerid'), '-pl-identity', '-vms', '-prd-001')]",
-	            "supportedby": "pink",
-		        "subscription": "pl-indentity"
+	        "resourcegroup": "[concat(parameters('customerid'), '-pl-identity', '-vms', '-prd-001')]",
+	        "supportedby": "pink",
+		"subscription": "pl-indentity"
 	
                     },
             "name": "[concat(parameters('customerid'), '-pl-identity', '-vms', '-prd-001')]",
