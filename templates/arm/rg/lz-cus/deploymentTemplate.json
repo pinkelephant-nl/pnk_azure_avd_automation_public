@@ -78,21 +78,7 @@
             "type": "Microsoft.Resources/resourceGroups",
             "apiVersion": "2018-05-01",
             "location": "[parameters('rgLocation')]",
-            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-northwave', '-prd-001')]",
-            "properties": {}
-        },
-        {
-            "type": "Microsoft.Resources/resourceGroups",
-            "apiVersion": "2018-05-01",
-            "location": "[parameters('rgLocation')]",
-            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-ics', '-prd-001')]",
-            "properties": {}
-        },
-        {
-            "type": "Microsoft.Resources/resourceGroups",
-            "apiVersion": "2018-05-01",
-            "location": "[parameters('rgLocation')]",
-            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-ics', '-nonprd-001')]",
+            "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-runbook', '-prd-001')]",
             "properties": {}
         }
 
