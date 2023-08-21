@@ -18,8 +18,9 @@
             "tags": {
                 "environment": "prod",
                 "department": "it",
-	            "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-bck', '-prd-001')]",
-	            "supportedby": "pink"
+	        "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-bck', '-prd-001')]",
+	        "supportedby": "pink",
+		"subscription": "[concat('lz ', parameters('customerid'))]"
 	
                     },
             "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-bck', '-prd-001')]",
@@ -32,8 +33,9 @@
             "tags": {
                 "environment": "prod",
                 "department": "it",
-	            "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-end', '-prd-001')]",
-	            "supportedby": "pink"
+	        "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-end', '-prd-001')]",
+	        "supportedby": "pink",
+		"subscription": "[concat('lz ', parameters('customerid'))]"
 	
                     },
             "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-end', '-prd-001')]",
@@ -46,8 +48,9 @@
             "tags": {
                 "environment": "prod",
                 "department": "it",
-	            "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-inf', '-prd-001')]",
-	            "supportedby": "pink"
+	        "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-inf', '-prd-001')]",
+	        "supportedby": "pink",
+		"subscription": "[concat('lz ', parameters('customerid'))]"
 	
                     },
             "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-inf', '-prd-001')]",
@@ -60,8 +63,9 @@
             "tags": {
                 "environment": "prod",
                 "department": "it",
-	            "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-net', '-prd-001')]",
-	            "supportedby": "pink"
+	        "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-net', '-prd-001')]",
+	        "supportedby": "pink",
+		"subscription": "[concat('lz ', parameters('customerid'))]"
 	
                     },
             "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-net', '-prd-001')]",
@@ -74,8 +78,9 @@
             "tags": {
                 "environment": "prod",
                 "department": "it",
-	            "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-vms', '-prd-001')]",
-	            "supportedby": "pink"
+	        "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-vms', '-prd-001')]",
+	        "supportedby": "pink",
+		"subscription": "[concat('lz ', parameters('customerid'))]"
 	
                     },
             "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-vms', '-prd-001')]",
@@ -88,8 +93,9 @@
             "tags": {
                 "environment": "prod",
                 "department": "it",
-	            "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-avd', '-prd-001')]",
-	            "supportedby": "pink"
+	        "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-avd', '-prd-001')]",
+	        "supportedby": "pink",
+		"subscription": "[concat('lz ', parameters('customerid'))]"
 	
                     },
             "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-avd', '-prd-001')]",
@@ -102,8 +108,9 @@
             "tags": {
                 "environment": "dev",
                 "department": "it",
-	            "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-avd', '-dev-001')]",
-	            "supportedby": "pink"
+	        "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-avd', '-dev-001')]",
+	        "supportedby": "pink",
+		"subscription": "[concat('lz ', parameters('customerid'))]"
 	
                     },
             "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-avd', '-dev-001')]",
@@ -116,8 +123,9 @@
             "tags": {
                 "environment": "prod",
                 "department": "it",
-	            "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-aib', '-prd-001')]",
-	            "supportedby": "pink"
+	        "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-aib', '-prd-001')]",
+	        "supportedby": "pink",
+		"subscription": "[concat('lz ', parameters('customerid'))]"
 	
                     },
             "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-aib', '-prd-001')]",
@@ -130,8 +138,9 @@
             "tags": {
                 "environment": "dev",
                 "department": "it",
-	            "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-aib', '-dev-001')]",
-	            "supportedby": "pink"
+	        "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-aib', '-dev-001')]",
+	        "supportedby": "pink",
+		"subscription": "[concat('lz ', parameters('customerid'))]"
 	
                     },
             "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-aib', '-dev-001')]",
@@ -144,8 +153,9 @@
             "tags": {
                 "environment": "prod",
                 "department": "it",
-	            "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-runbook', '-prd-001')]",
-	            "supportedby": "pink"
+	        "resourcegroup": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-runbook', '-prd-001')]",
+	        "supportedby": "pink",
+		"subscription": "[concat('lz ', parameters('customerid'))]"
 	
                     },
             "name": "[concat(parameters('customerid'), '-lz-', parameters('customerid'), '-runbook', '-prd-001')]",
