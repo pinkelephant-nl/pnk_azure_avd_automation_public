@@ -25,6 +25,5 @@
             "name": "[concat(parameters('customerid'), '-pl-connectivity', '-inf', '-prd-001')]",
             "properties": {}
         }
-    ],
     "outputs": {}
 }
