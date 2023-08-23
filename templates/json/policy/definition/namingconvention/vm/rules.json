@@ -98,7 +98,7 @@
         {
           "not": {
             "field": "name",
-            "like": "[concat(parameters('customerID'),'-azd-azc-*')]-*"
+            "like": "[concat(parameters('customerID'),'-azd-azc-*')]"
           }
         },
         {
