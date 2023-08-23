@@ -24,11 +24,7 @@
                     "category": "General"
                 },
                 "mode": "All",
-                "parameters": {
-                    "customerID": {
-                        "type": "string"
-                    }
-                },
+                
                 "policyRule": {
                      "if": {
       "allOf": [
