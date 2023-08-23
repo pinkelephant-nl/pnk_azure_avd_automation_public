@@ -1,6 +1,6 @@
 {
     "customerID": {
       "type": "String",
-      "defaultValue": ""
+      "defaultValue": "xxx"
     }
 }
