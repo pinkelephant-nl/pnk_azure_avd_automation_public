@@ -1,0 +1,145 @@
+{
+    "if": {
+      "allOf": [
+        {
+          "field": "type",
+          "match": "Microsoft.Compute/virtualMachines"
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azp-adc-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azp-azc-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azp-man-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azp-app-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azp-dbs-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azp-avs-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azp-avd-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azt-adc-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azt-azc-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azt-man-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azt-app-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azt-dbs-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azt-avs-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azt-avd-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azd-adc-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azd-azc-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azd-man-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azd-app-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azd-avd-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azd-dbs-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azd-avs-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-azd-avd-*"
+          }
+        }
+      ]
+    },
+    "then": {
+      "effect": "deny"
+    }
+  }
