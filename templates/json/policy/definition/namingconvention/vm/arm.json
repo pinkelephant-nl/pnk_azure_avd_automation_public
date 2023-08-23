@@ -21,7 +21,7 @@
                 "mode": "All",
                 "parameters": {
                     "customerid": {
-                        "type": "String",
+                        "type": "string",
                     }
                 },
                 "policyRule": {
