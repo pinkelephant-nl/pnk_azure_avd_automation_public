@@ -20,7 +20,7 @@
                 },
                 "mode": "All",
                 "parameters": {
-                    "customerid": {
+                    "customerID": {
                         "type": "string",
                     }
                 },
