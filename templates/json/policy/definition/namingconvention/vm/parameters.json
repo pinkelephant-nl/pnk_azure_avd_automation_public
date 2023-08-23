@@ -1,0 +1,9 @@
+{
+    "customerID": {
+      "type": "String",
+      "metadata": {
+        "displayName": "customerID",
+        "description": null
+      },
+      "defaultValue": ""
+    }
