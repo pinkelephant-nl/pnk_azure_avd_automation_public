@@ -8,133 +8,133 @@
         {
           "not": {
             "field": "name",
-            "like": "xxx-azp-adc-*"
+            "like": "[concat(parameters('customerID'),'-azp-adc-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azp-azc-*"
+            "like": "[concat(parameters('customerID'),'-azp-azc-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azp-man-*"
+            "like": "[concat(parameters('customerID'),'-azp-man-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azp-app-*"
+            "like": "[concat(parameters('customerID'),'-azp-app-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azp-dbs-*"
+            "like": "[concat(parameters('customerID'),'-azp-dbs-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azp-avs-*"
+            "like": "[concat(parameters('customerID'),'-azp-avs-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azp-avd-*"
+            "like": "[concat(parameters('customerID'),'-azp-avd-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azt-adc-*"
+            "like": "[concat(parameters('customerID'),'-azt-adc-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azt-azc-*"
+            "like": "[concat(parameters('customerID'),'-azt-azc-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azt-man-*"
+            "like": "[concat(parameters('customerID'),'-azt-man-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azt-app-*"
+            "like": "[concat(parameters('customerID'),'-azt-app-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azt-dbs-*"
+            "like": "[concat(parameters('customerID'),'-azt-dbs-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azt-avs-*"
+            "like": "[concat(parameters('customerID'),'-azt-avs-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azt-avd-*"
+            "like": "[concat(parameters('customerID'),'-azt-avd-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azd-adc-*"
+            "like": "[concat(parameters('customerID'),'-azd-adc-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azd-azc-*"
+            "like": "[concat(parameters('customerID'),'-azd-azc-*')]-*"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azd-man-*"
+            "like": "[concat(parameters('customerID'),'-azd-man-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azd-app-*"
+            "like": "[concat(parameters('customerID'),'-azd-app-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azd-avd-*"
+            "like": "[concat(parameters('customerID'),'-azd-avd-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azd-dbs-*"
+            "like": "[concat(parameters('customerID'),'-azd-dbs-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azd-avs-*"
+            "like": "[concat(parameters('customerID'),'-azd-avs-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-azd-avd-*"
+            "like": "[concat(parameters('customerID'),'-azd-avd-*')]"
           }
         }
       ]
