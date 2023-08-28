@@ -1,4 +1,4 @@
-
+{
     "listOfAllowedLocations": {
       "type": "Array",
       "metadata": {
@@ -8,3 +8,4 @@
       }
     }
   
+}
