@@ -5,7 +5,7 @@
       "allowedValues": [
             "westeurope",
             "northeurope"
-        ]
+        ],
       "metadata": {
         "displayName": "Allowed locations",
         "description": "The list of locations that resource groups can be created in.",
