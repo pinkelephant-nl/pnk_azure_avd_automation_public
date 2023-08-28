@@ -8,25 +8,25 @@
         {
           "not": {
             "field": "name",
-            "like": "xxx-pl-identity-*"
+            "like": "[concat(parameters('customerID'),'-pl-identity-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-pl-connectivity-*"
+            "like": "[concat(parameters('customerID'),'-pl-connectivity-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-pl-management-*"
+            "like": "[concat(parameters('customerID'),'-pl-management-*')]"
           }
         },
         {
           "not": {
             "field": "name",
-            "like": "xxx-lz-snr-*"
+            "like": "[concat(parameters('customerID'),'-lz-snr-*')]"
           }
         }
       ]
