@@ -26,7 +26,7 @@
         {
           "not": {
             "field": "name",
-            "like": "[concat(parameters('customerID'),'-lz-snr-*')]"
+            "like": "[concat(parameters('customerID'),'-lz-', parameters('customerID'),'-*')]"
           }
         }
       ]
