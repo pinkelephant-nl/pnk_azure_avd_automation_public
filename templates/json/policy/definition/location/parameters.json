@@ -6,7 +6,7 @@
             "displayName": "Allowed locations",
             "strongType": "location"
         },
-        "defaultValue": [ "westeurope" ],
+        "defaultValue": [ "westeurope", "northeurope" ],
         "allowedValues": [
             "westeurope",
             "northeurope"
