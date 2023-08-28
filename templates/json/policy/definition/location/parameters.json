@@ -1,11 +1,17 @@
 {
-    "listOfAllowedLocations": {
-      "type": "Array",
-      "metadata": {
-        "displayName": "Allowed locations",
-        "description": "The list of locations that resource groups can be created in.",
-        "strongType": "location"
-      }
+    "allowedLocations": {
+        "type": "array",
+        "metadata": {
+            "description": "The list of allowed locations for resources.",
+            "displayName": "Allowed locations",
+            "strongType": "location"
+        },
+        "defaultValue": [ "westus2" ],
+        "allowedValues": [
+            "eastus2",
+            "westus2",
+            "westus"
+        ]
     }
   
 }
