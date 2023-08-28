@@ -1,4 +1,4 @@
-{
+
     "listOfAllowedLocations": {
       "type": "Array",
       "metadata": {
@@ -7,4 +7,4 @@
         "strongType": "location"
       }
     }
-  }
+  
