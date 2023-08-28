@@ -1,0 +1,37 @@
+}
+"if": {
+      "allOf": [
+        {
+          "field": "type",
+          "match": "Microsoft.Resources/subscriptions/resourceGroups"
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-pl-identity-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-pl-connectivity-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "xxx-pl-management-*"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "like": "snr-lz-snr-*"
+          }
+        }
+      ]
+    },
+    "then": {
+      "effect": "deny"
+    }
+  }
