@@ -17,7 +17,7 @@
         }
     },
     "variables": {
-          "migrateProjectName": "[concat(parameters('customerid'),'-vm-vmware')]"
+          "migrateProjectName": "[concat(parameters('customerid'),'-mig-vm-vmware')]"
     },
     "resources": [
         {
