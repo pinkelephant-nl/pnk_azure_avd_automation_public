@@ -2,6 +2,10 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
+        "customerId": {
+            "type": "string",
+            "maxLength": 3
+        },
         "migrateProjectName": {
             "type": "string",
             "maxLength": 13,
