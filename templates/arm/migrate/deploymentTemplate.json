@@ -2,12 +2,8 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "migrateProjectName": {
-            "type": "string",
-            "maxLength": 30,
-            "metadata": {
-                "description": "Specifies a name for creating the migrate project."
-            }
+        "customerid": {
+            "type": "string"
         },
         "location": {
             "type": "string",
@@ -19,6 +15,9 @@
                 "description": "Specifies the location for all resources."
             }
         }
+    },
+    "variables": {
+          "migrateProjectName": "[concat(parameters('customerid'),'-vm-vmware')]"
     },
     "resources": [
         {
