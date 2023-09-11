@@ -10,7 +10,10 @@
         },
         "location": {
             "type": "string"
-        }
+        },
+	"subscriptionidcon": {
+	     "type": "string"
+	}
     },
 "variables": {
 "name": "[concat(parameters('customerid'), '-vgw-', parameters('customerFullName'), 'main', '-prd', '-westeu-001')]",
