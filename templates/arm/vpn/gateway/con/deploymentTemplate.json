@@ -15,7 +15,7 @@
 "variables": {
 "name": "[concat(parameters('customerid'), '-vgw-', parameters('customerFullName'), 'main', '-prd', '-westeu-001')]",
 "newPublicIpAddressName": "[concat(parameters('customerID'),'-pip-', 'vgw_gw1az_', parameters('customerid'), '-prd-westeu-001')]",
-"resourcegroup": "[conct(parameters('customerid'), '-pl-connectivity-net-prd-001')]",
+"resourcegroup": "[concat(parameters('customerid'), '-pl-connectivity-net-prd-001')]",
 "subnetId": "[concat('/subscriptions/', parameters('subscriptionidcon'), '/resourceGroups/', parameters('resourcegroup'), '/providers/Microsoft.Network/virtualNetworks/', parameters('customerid'), '-vnet-pl-con-prd-westeu-001', '/subnets/GatewaySubnet')]"
 },
     "resources": [
