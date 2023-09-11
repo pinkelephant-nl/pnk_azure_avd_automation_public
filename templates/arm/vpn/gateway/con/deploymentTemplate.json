@@ -42,7 +42,7 @@
                                 "id": "[variables('subnetId')]"
                             },
                             "publicIpAddress": {
-                                "id": "[resourceId(variables('reourcegroup'), 'Microsoft.Network/publicIPAddresses', variables('newPublicIpAddressName'))]"
+                                "id": "[resourceId(variables('resourcegroup'), 'Microsoft.Network/publicIPAddresses', variables('newPublicIpAddressName'))]"
                             }
                         }
                     }
