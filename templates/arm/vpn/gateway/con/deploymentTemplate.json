@@ -16,9 +16,9 @@
 	}
     },
 "variables": {
-"name": "[concat(parameters('customerid'), '-vgw-', parameters('customerFullName'), 'main', '-prd', '-westeu-001')]",
+"name": "[concat(parameters('customerid'), '-vgw-', '_gw1az_', 'parameters('customerFullName'), '_main', '-prd', '-westeu-001')]",
 "newPublicIpAddressName": "[concat(parameters('customerid'),'-pip-', 'vgw_gw1az_', parameters('customerid'), '-prd-westeu-001')]",
-"resourcegroup": "[concat(parameters('customerid'), '-pl-connectivity-net-prd-001')]",
+"resourcegroup": "[resourceGroup().name]",
 "subnetId": "[concat('/subscriptions/', parameters('subscriptionidcon'), '/resourceGroups/', variables('resourcegroup'), '/providers/Microsoft.Network/virtualNetworks/', parameters('customerid'), '-vnet-pl-con-prd-westeu-001', '/subnets/GatewaySubnet')]"
 },
     "resources": [
