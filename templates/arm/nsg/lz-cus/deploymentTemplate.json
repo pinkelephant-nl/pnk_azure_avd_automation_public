@@ -24,7 +24,7 @@
     },
     "nsgName": {
       "type": "string",
-      "defaultValue":"[concat(parameters('customerid'), '-nsg-snet-lz-', parameters('customerid'), 'inf-prd-001')]",
+      "defaultValue":"[concat(parameters('customerid'), '-nsg-snet-lz-', parameters('customerid'), '-inf-prd-001')]",
       "metadata": {
         "description": "The name of the new nsg."
       }
@@ -38,7 +38,7 @@
     },
     "nsgName1": {
       "type": "string",
-      "defaultValue":"[concat(parameters('customerid'), '-nsg-snet-lz-', parameters('customerid'), 'avd-prd-001')]",
+      "defaultValue":"[concat(parameters('customerid'), '-nsg-snet-lz-', parameters('customerid'), '-avd-prd-001')]",
       "metadata": {
         "description": "The name of the new nsg."
       }
