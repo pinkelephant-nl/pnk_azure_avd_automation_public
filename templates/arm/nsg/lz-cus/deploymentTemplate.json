@@ -65,9 +65,12 @@
               "access": "Allow",
               "priority": 100,
               "direction": "Inbound"
+               }
             }
-          },
-          {
+          ]
+        }
+      },
+      {
       "type": "Microsoft.Network/networkSecurityGroups",
       "name": "[parameters('nsgName1')]",
       "location": "[resourceGroup().location]",
