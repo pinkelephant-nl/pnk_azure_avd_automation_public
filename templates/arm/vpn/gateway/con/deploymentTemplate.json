@@ -13,6 +13,9 @@
         },
 	"subscriptionidcon": {
 	     "type": "string"
+	},
+	"vpnsku": {
+	     "type": "string"
 	}
     },
 "variables": {
@@ -50,8 +53,8 @@
                 "vpnType": "RouteBased",
                 "vpnGatewayGeneration": "Generation1",
                 "sku": {
-                    "name": "VpnGw1AZ",
-                    "tier": "VpnGw1AZ"
+                    "name": "[parameters('vpnsku')]",
+                    "tier": "[parameters('vpnsku')]"
                 }
             }
         },
