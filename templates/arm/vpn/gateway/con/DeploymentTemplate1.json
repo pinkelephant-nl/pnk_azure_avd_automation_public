@@ -16,6 +16,9 @@
 	},
 	"vpnsku": {
 	     "type": "string"
+	},
+	"tier": {
+	    "type": "string"
 	}
     },
 "variables": {
