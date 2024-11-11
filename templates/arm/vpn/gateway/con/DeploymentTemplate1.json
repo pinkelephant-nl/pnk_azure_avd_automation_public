@@ -67,7 +67,7 @@
                 "publicIPAllocationMethod": "Dynamic"
             },
             "sku": {
-                "name": "Dynamic"
+                "name": "Basic"
             },
             "zones": []
         }
