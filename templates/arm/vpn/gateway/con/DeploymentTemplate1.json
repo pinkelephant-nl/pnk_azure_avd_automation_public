@@ -16,9 +16,6 @@
 	},
 	"vpnsku": {
 	     "type": "string"
-	},
-	"tier": {
-	     "type": "string"
 	}
     },
 "variables": {
@@ -70,10 +67,13 @@
                 "publicIPAllocationMethod": "Dynamic"
             },
             "sku": {
-                "name": "Basic"
+                "name": "Standard"
             },
-            "zones":"[parameters('tier')]"
-            
+            "zones": [
+                "1",
+                "2",
+                "3"
+            ]
         }
     ]
 }
