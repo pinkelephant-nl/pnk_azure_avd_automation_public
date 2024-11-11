@@ -13,9 +13,6 @@
         },
 	"subscriptionidcon": {
 	     "type": "string"
-	},
-	"vpnsku": {
-	     "type": "string"
 	}
     },
 "variables": {
@@ -53,8 +50,7 @@
                 "vpnType": "RouteBased",
                 "vpnGatewayGeneration": "Generation1",
                 "sku": {
-                    "name": "[parameters('vpnsku')]",
-                    "tier": "[parameters('vpnsku')]"
+                    "name": "Basic"
                 }
             }
         },
