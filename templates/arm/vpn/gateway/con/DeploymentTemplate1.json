@@ -17,7 +17,7 @@
     },
 "variables": {
 "name": "[concat(parameters('customerid'), '-vgw-', 'pl-con', '-basic_', toLower(parameters('customerFullName')), '_main', '-prd', '-westeu-001')]",
-"newPublicIpAddressName": "[concat(parameters('customerid'),'-pip-', 'pl-con-', 'vgw_', 'basic-', parameters('customerid'), '-prd-westeu-001')]",
+"newPublicIpAddressName": "[concat(parameters('customerid'),'-pip-', 'pl-con-', 'vgw_', 'basic_', parameters('customerid'), '-prd-westeu-001')]",
 "resourcegroup": "[resourceGroup().name]",
 "subnetId": "[concat('/subscriptions/', parameters('subscriptionidcon'), '/resourceGroups/', variables('resourcegroup'), '/providers/Microsoft.Network/virtualNetworks/', parameters('customerid'), '-vnet-pl-con-prd-westeu-001', '/subnets/GatewaySubnet')]"
 },
