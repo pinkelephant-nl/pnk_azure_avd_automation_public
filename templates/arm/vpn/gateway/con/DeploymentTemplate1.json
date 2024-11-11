@@ -1,0 +1,79 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "customerid": {
+            "type": "string"
+        },
+	"customerFullName": {
+            "type": "string"
+        },
+        "location": {
+            "type": "string"
+        },
+	"subscriptionidcon": {
+	     "type": "string"
+	},
+	"vpnsku": {
+	     "type": "string"
+	}
+    },
+"variables": {
+"name": "[concat(parameters('customerid'), '-vgw-', 'pl-con', toLower(parameters('vpnsku')), toLower(parameters('customerFullName')), '_main', '-prd', '-westeu-001')]",
+"newPublicIpAddressName": "[concat(parameters('customerid'),'-pip-', 'pl-con', 'vgw_', parameters('vpnsku'), parameters('customerid'), '-prd-westeu-001')]",
+"resourcegroup": "[resourceGroup().name]",
+"subnetId": "[concat('/subscriptions/', parameters('subscriptionidcon'), '/resourceGroups/', variables('resourcegroup'), '/providers/Microsoft.Network/virtualNetworks/', parameters('customerid'), '-vnet-pl-con-prd-westeu-001', '/subnets/GatewaySubnet')]"
+},
+    "resources": [
+        {
+            "apiVersion": "2020-11-01",
+            "name": "[variables('name')]",
+            "type": "Microsoft.Network/virtualNetworkGateways",
+            "location": "[parameters('location')]",
+            "dependsOn": [
+                "[concat('Microsoft.Network/publicIPAddresses/', variables('newPublicIpAddressName'))]"
+            ],
+            "tags": {},
+            "properties": {
+                "gatewayType": "Vpn",
+                "ipConfigurations": [
+                    {
+                        "name": "default",
+                        "properties": {
+                            "privateIPAllocationMethod": "Dynamic",
+                            "subnet": {
+                                "id": "[variables('subnetId')]"
+                            },
+                            "publicIpAddress": {
+                                "id": "[resourceId(variables('resourcegroup'), 'Microsoft.Network/publicIPAddresses', variables('newPublicIpAddressName'))]"
+                            }
+                        }
+                    }
+                ],
+                "vpnType": "RouteBased",
+                "vpnGatewayGeneration": "Generation1",
+                "sku": {
+                    "name": "[parameters('vpnsku')]",
+                    "tier": "[parameters('vpnsku')]"
+                }
+            }
+        },
+        {
+            "apiVersion": "2020-08-01",
+            "type": "Microsoft.Network/publicIPAddresses",
+            "name": "[variables('newPublicIpAddressName')]",
+            "location": "[parameters('location')]",
+            "properties": {
+                "publicIPAllocationMethod": "Dynamic"
+            },
+            "sku": {
+                "name": "Basic"
+            },
+            "zones": [
+                "1",
+                "2",
+                "3"
+            ]
+        }
+    ]
+}
