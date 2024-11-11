@@ -68,7 +68,9 @@
             },
             "sku": {
                 "name": "Basic"
-            }
+            },
+            "zones": "none"
+            ]
         }
     ]
 }
