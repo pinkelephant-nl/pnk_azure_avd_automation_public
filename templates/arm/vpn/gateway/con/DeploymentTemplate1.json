@@ -16,9 +16,6 @@
 	},
 	"vpnsku": {
 	     "type": "string"
-	},
-	"tier": {
-	    "type": "string"
 	}
     },
 "variables": {
@@ -57,7 +54,7 @@
                 "vpnGatewayGeneration": "Generation1",
                 "sku": {
                     "name": "[parameters('vpnsku')]",
-                    "tier": "[parameters('tier')]"
+                    "tier": "[parameters('vpnsku')]"
                 }
             }
         },
