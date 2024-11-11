@@ -19,6 +19,7 @@
 	},
 	"tier": {
 	     "type": "string"
+	}
     },
 "variables": {
 "name": "[concat(parameters('customerid'), '-vgw-', 'pl-con', toLower(parameters('vpnsku')), toLower(parameters('customerFullName')), '_main', '-prd', '-westeu-001')]",
