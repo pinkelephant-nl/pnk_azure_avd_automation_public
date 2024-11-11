@@ -72,8 +72,8 @@
             "sku": {
                 "name": "Basic"
             },
-            "zones": "Regional"
-            ]
+            "zones":"[parameters('tier')]"
+            
         }
     ]
 }
