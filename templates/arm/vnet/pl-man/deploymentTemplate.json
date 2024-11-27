@@ -34,14 +34,14 @@
       "properties": {
         "addressSpace": {
           "addressPrefixes": [
-            "[concat(parameters('addressprefix'), '.11.0/24')]"
+            "[concat(parameters('addressprefix'), '.28.0/22')]"
           ]
         },
         "subnets": [
           {
             "name": "[concat(parameters('customerid'), '-snet-pl-man-prd-001')]",
             "properties": {
-              "addressPrefix": "[concat(parameters('addressprefix'), '.11.0/25')]"
+              "addressPrefix": "[concat(parameters('addressprefix'), '.28.0/24')]"
             }
           }
         ]
