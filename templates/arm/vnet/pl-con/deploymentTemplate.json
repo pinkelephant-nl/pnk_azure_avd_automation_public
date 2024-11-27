@@ -34,26 +34,26 @@
       "properties": {
         "addressSpace": {
           "addressPrefixes": [
-            "[concat(parameters('addressprefix'), '.8.0/23')]"
+            "[concat(parameters('addressprefix'), '.20.0/22')]"
           ]
         },
         "subnets": [
           {
             "name": "GatewaySubnet",
             "properties": {
-              "addressPrefix": "[concat(parameters('addressprefix'), '.8.0/27')]"
+              "addressPrefix": "[concat(parameters('addressprefix'), '.20.0/27')]"
             }
           },
           {
             "name": "AzureBastionSubnet",
             "properties": {
-              "addressPrefix": "[concat(parameters('addressprefix'), '.8.64/26')]"
+              "addressPrefix": "[concat(parameters('addressprefix'), '.20.64/26')]"
             }
           },
           {
             "name": "[concat(parameters('customerid'), '-snet-pl-con-prd-001')]",
             "properties": {
-              "addressPrefix": "[concat(parameters('addressprefix'), '.9.0/25')]"
+              "addressPrefix": "[concat(parameters('addressprefix'), '.21.0/25')]"
             }
           }
         ]
