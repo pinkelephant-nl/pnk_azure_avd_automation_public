@@ -34,26 +34,26 @@
       "properties": {
         "addressSpace": {
           "addressPrefixes": [
-            "[concat(parameters('addressprefix'), '.12.0/22')]"
+            "[concat(parameters('addressprefix'), '.20.0/22')]"
           ]
         },
         "subnets": [
           {
             "name": "[concat(parameters('customerid'), '-snet-inf-prd-001')]",
             "properties": {
-              "addressPrefix": "[concat(parameters('addressprefix'), '.12.0/25')]"
+              "addressPrefix": "[concat(parameters('addressprefix'), '.20.0/25')]"
             }
           },
           {
             "name": "[concat(parameters('customerid'), '-snet-avd-prd-001')]",
             "properties": {
-              "addressPrefix": "[concat(parameters('addressprefix'), '.13.0/25')]"
+              "addressPrefix": "[concat(parameters('addressprefix'), '.21.0/25')]"
             }
           },
           {
             "name": "[concat(parameters('customerid'), '-snet-app-prd-001')]",
             "properties": {
-              "addressPrefix": "[concat(parameters('addressprefix'), '.14.0/25')]"
+              "addressPrefix": "[concat(parameters('addressprefix'), '.22.0/25')]"
             }
           }
         ]
